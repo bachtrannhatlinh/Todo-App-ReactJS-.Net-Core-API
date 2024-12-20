@@ -1,4 +1,4 @@
-﻿using BackEnd_TodoList.Models;
+﻿using BackEnd_TodoList.Models.TodoList;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

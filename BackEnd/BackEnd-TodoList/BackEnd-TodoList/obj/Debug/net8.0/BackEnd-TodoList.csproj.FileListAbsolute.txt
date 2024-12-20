@@ -176,3 +176,4 @@ D:\Todo-App-ReactJS-.Net-Core-API\BackEnd\BackEnd-TodoList\BackEnd-TodoList\bin\
 D:\Todo-App-ReactJS-.Net-Core-API\BackEnd\BackEnd-TodoList\BackEnd-TodoList\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\Todo-App-ReactJS-.Net-Core-API\BackEnd\BackEnd-TodoList\BackEnd-TodoList\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\Todo-App-ReactJS-.Net-Core-API\BackEnd\BackEnd-TodoList\BackEnd-TodoList\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Todo-App-ReactJS-.Net-Core-API\BackEnd\BackEnd-TodoList\BackEnd-TodoList\obj\Debug\net8.0\BackEnd-TodoList.sourcelink.json

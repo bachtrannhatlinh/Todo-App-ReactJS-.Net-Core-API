@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BackEnd_TodoList.Models.TodoList;
+using BackEnd_TodoList.Service.TodoListApp;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,11 +10,16 @@ namespace BackEnd_TodoList.Controllers
     [ApiController]
     public class Todo_ListController : ControllerBase
     {
+        private readonly ITodoListService _todoListService;
+        public Todo_ListController(ITodoListService todoListService)
+        {
+            _todoListService = todoListService;
+        }
         // GET: api/<Todo_ListController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IActionResult Get()
         {
-            return new string[] { "value1", "value2" };
+            return Ok(_todoListService.GetTodoList());
         }
 
         // GET api/<Todo_ListController>/5
@@ -24,8 +31,9 @@ namespace BackEnd_TodoList.Controllers
 
         // POST api/<Todo_ListController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult Post(TodoList todoList)
         {
+            return Ok(_todoListService.AddTodo(todoList));
         }
 
         // PUT api/<Todo_ListController>/5
@@ -36,8 +44,9 @@ namespace BackEnd_TodoList.Controllers
 
         // DELETE api/<Todo_ListController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
+            return Ok(_todoListService.DeleteTodo(id));
         }
     }
 }

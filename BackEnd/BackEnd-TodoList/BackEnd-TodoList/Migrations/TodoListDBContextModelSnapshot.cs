@@ -41,6 +41,20 @@ namespace BackEnd_TodoList.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("todoList", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "task 1",
+                            isCompleted = false
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "task 2",
+                            isCompleted = false
+                        });
                 });
 #pragma warning restore 612, 618
         }

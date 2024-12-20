@@ -2,10 +2,12 @@
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace BackEnd_TodoList.Migrations
 {
     /// <inheritdoc />
-    public partial class inittodolist : Migration
+    public partial class InitTodoList : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -22,6 +24,15 @@ namespace BackEnd_TodoList.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_todoList", x => x.Id);
+                });
+
+            migrationBuilder.InsertData(
+                table: "todoList",
+                columns: new[] { "Id", "Name" },
+                values: new object[,]
+                {
+                    { 1, "task 1" },
+                    { 2, "task 2" }
                 });
         }
 

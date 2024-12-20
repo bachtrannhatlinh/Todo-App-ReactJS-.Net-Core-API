@@ -1,4 +1,4 @@
-﻿namespace BackEnd_TodoList.Models
+﻿namespace BackEnd_TodoList.Models.TodoList
 {
     public class TodoList
     {

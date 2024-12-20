@@ -7,3 +7,11 @@ const END_POINT = {
 export const getDataTodoList = () => {
   return axiosClient.get(`${END_POINT.TODO_LIST}`)
 }
+
+export const deleteDataTodoList = (id) => {
+  return axiosClient.delete(`${END_POINT.TODO_LIST}/${id}`)
+}
+
+export const addDataTodoList = (task) => {
+  return axiosClient.post(`${END_POINT.TODO_LIST}`, task)
+}

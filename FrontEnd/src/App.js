@@ -1,17 +1,34 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 
-import { getDataTodoList } from "./api/todoList";
+import { getDataTodoList, deleteDataTodoList, addDataTodoList } from "./api/todoList";
 
 function App() {
+  const [todoList, setTodoList] = useState([]);
+
   useEffect(() => {
     fetchData();
   }, []);
 
   const fetchData = async () => {
-    const data = await getDataTodoList();
-    console.log(data, "data");
+    setTodoList(await getDataTodoList());
   };
+
+  const handleDeleteTodo = async (id) => {
+    if (window.confirm("do you want delete it ?")) {
+      await deleteDataTodoList(id);
+      window.location.reload();
+    }
+  };
+
+  const handleAddTask = async (e) => {
+    e.preventDefault();
+    let name = e.target[0].value
+    await addDataTodoList({
+      name: name
+    });
+    window.location.reload();
+  }
 
   return (
     <div className="App">
@@ -20,7 +37,32 @@ function App() {
           Danh sách
           <span>Việc hôm nay không để ngày mai.</span>
         </h1>
-        <li className="done">
+        {todoList ? (
+          todoList?.map((item) => {
+            return (
+              <li className={item.isComplete ? "done" : ""} key={item.id}>
+                <span className="label">{item.name}</span>
+                <div className="actions">
+                  <button className="btn-picto" type="button">
+                    <i className="fas fa-edit" />
+                  </button>
+                  <button
+                    className="btn-picto"
+                    type="button"
+                    aria-label="Delete"
+                    title="Delete"
+                    onClick={() => handleDeleteTodo(item.id)}
+                  >
+                    <i className="fas fa-trash" />
+                  </button>
+                </div>
+              </li>
+            );
+          })
+        ) : (
+          <p>Danh sách nhiệm vụ trống.</p>
+        )}
+        {/* <li className="done">
           <span className="label">123</span>
           <div className="actions">
             <button className="btn-picto" type="button">
@@ -51,13 +93,12 @@ function App() {
               <i className="fas fa-trash" />
             </button>
           </div>
-        </li>
-        <p>Danh sách nhiệm vụ trống.</p>
-        <form>
+        </li> */}
+        <form onSubmit={handleAddTask}>
           <label id="name">Thêm nhiệm vụ mới</label>
           <input type="text" name="name" id="name" />
-          <input type="text" name="id" id="name" />
-          <button type="button">Thêm mới</button>
+          <input type="text" name="id" id="id" />
+          <button type="submit">Thêm mới</button>
         </form>
       </main>
     </div>

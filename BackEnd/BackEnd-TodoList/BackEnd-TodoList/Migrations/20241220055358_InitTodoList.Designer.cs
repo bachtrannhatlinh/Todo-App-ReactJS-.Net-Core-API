@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BackEnd_TodoList.Migrations
 {
     [DbContext(typeof(TodoListDBContext))]
-    [Migration("20241219191430_init-todo-list")]
-    partial class inittodolist
+    [Migration("20241220055358_InitTodoList")]
+    partial class InitTodoList
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -44,6 +44,20 @@ namespace BackEnd_TodoList.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("todoList", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "task 1",
+                            isCompleted = false
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "task 2",
+                            isCompleted = false
+                        });
                 });
 #pragma warning restore 612, 618
         }

@@ -38,9 +38,22 @@ namespace BackEnd_TodoList.Controllers
 
         // PUT api/<Todo_ListController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public IActionResult Put(int id, [FromBody] TodoList todoList)
         {
+            if (id != todoList.Id) // Kiểm tra ID trùng khớp
+            {
+                return BadRequest("ID mismatch.");
+            }
+
+            var result = _todoListService.UpdateTodo(todoList);
+            if (result)
+            {
+                return Ok();
+            }
+
+            return NotFound();
         }
+
 
         // DELETE api/<Todo_ListController>/5
         [HttpDelete("{id}")]

@@ -1,34 +1,65 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-import { getDataTodoList, deleteDataTodoList, addDataTodoList } from "./api/todoList";
+import {
+  getDataTodoList,
+  deleteDataTodoList,
+  addDataTodoList,
+  updateDataTodoList, 
+} from "./api/todoList";
 
 function App() {
   const [todoList, setTodoList] = useState([]);
+  const [textBtn, setTextBtn] = useState("ADD NEW");
+  const [editingTodo, setEditingTodo] = useState(null); // Lưu trạng thái chỉnh sửa
 
   useEffect(() => {
     fetchData();
   }, []);
 
+  // Lấy danh sách nhiệm vụ
   const fetchData = async () => {
     setTodoList(await getDataTodoList());
   };
 
+  // Xóa nhiệm vụ
   const handleDeleteTodo = async (id) => {
-    if (window.confirm("do you want delete it ?")) {
+    if (window.confirm("Do you want to delete this task?")) {
       await deleteDataTodoList(id);
-      window.location.reload();
+      fetchData(); // Cập nhật danh sách sau khi xóa
     }
   };
 
+  // Thêm hoặc cập nhật nhiệm vụ
   const handleAddTask = async (e) => {
     e.preventDefault();
-    let name = e.target[0].value
-    await addDataTodoList({
-      name: name
-    });
-    window.location.reload();
-  }
+    if (editingTodo.id) {
+      // Cập nhật nhiệm vụ
+      await updateDataTodoList(editingTodo.id, { id: editingTodo.id, name: editingTodo.name });
+      setEditingTodo(null); // Xóa trạng thái chỉnh sửa
+      setTextBtn("ADD NEW");
+    } else {
+      // Thêm nhiệm vụ mới
+      let name = e.target[0].value;
+      await addDataTodoList({ name });
+      setEditingTodo("")
+    }
+    fetchData(); // Cập nhật danh sách
+    e.target.reset(); // Reset form sau khi thêm hoặc cập nhật
+  };
+
+  // Chỉnh sửa nhiệm vụ
+  const handleEditTodo = (todo) => {
+    if (editingTodo?.id === todo.id) {
+      // Nếu đang chỉnh sửa nhiệm vụ này, kết thúc chỉnh sửa
+      setEditingTodo(null);
+      setTextBtn("ADD NEW");
+    } else {
+      // Bắt đầu chỉnh sửa nhiệm vụ
+      setEditingTodo(todo);
+      setTextBtn("UPDATE");
+    }
+  };
 
   return (
     <div className="App">
@@ -37,68 +68,67 @@ function App() {
           Danh sách
           <span>Việc hôm nay không để ngày mai.</span>
         </h1>
-        {todoList ? (
-          todoList?.map((item) => {
-            return (
-              <li className={item.isComplete ? "done" : ""} key={item.id}>
-                <span className="label">{item.name}</span>
-                <div className="actions">
-                  <button className="btn-picto" type="button">
-                    <i className="fas fa-edit" />
-                  </button>
-                  <button
-                    className="btn-picto"
-                    type="button"
-                    aria-label="Delete"
-                    title="Delete"
-                    onClick={() => handleDeleteTodo(item.id)}
-                  >
-                    <i className="fas fa-trash" />
-                  </button>
-                </div>
-              </li>
-            );
-          })
+        {todoList?.length > 0 ? (
+          todoList.map((item) => (
+            <li className={item.isComplete ? "done" : ""} key={item.id}>
+              <span className="label">{item.name}</span>
+              <div className="actions">
+                {/* Nút chỉnh sửa */}
+                <button
+                  className="btn-picto"
+                  type="button"
+                  onClick={() => handleEditTodo(item)}
+                >
+                  <i
+                    className={
+                      editingTodo?.id === item.id
+                        ? "fas fa-user-edit"
+                        : "fas fa-edit"
+                    }
+                  />
+                </button>
+
+                {/* Nút xóa */}
+                <button
+                  className="btn-picto"
+                  type="button"
+                  aria-label="Delete"
+                  title="Delete"
+                  onClick={() => handleDeleteTodo(item.id)}
+                >
+                  <i className="fas fa-trash" />
+                </button>
+              </div>
+            </li>
+          ))
         ) : (
           <p>Danh sách nhiệm vụ trống.</p>
         )}
-        {/* <li className="done">
-          <span className="label">123</span>
-          <div className="actions">
-            <button className="btn-picto" type="button">
-              <i className="fas fa-edit" />
-            </button>
-            <button
-              className="btn-picto"
-              type="button"
-              aria-label="Delete"
-              title="Delete"
-            >
-              <i className="fas fa-trash" />
-            </button>
-          </div>
-        </li>
-        <li>
-          <span className="label">123</span>
-          <div className="actions">
-            <button className="btn-picto" type="button">
-              <i className="fas fa-user-edit" />
-            </button>
-            <button
-              className="btn-picto"
-              type="button"
-              aria-label="Delete"
-              title="Delete"
-            >
-              <i className="fas fa-trash" />
-            </button>
-          </div>
-        </li> */}
+
+        {/* Form thêm hoặc cập nhật nhiệm vụ */}
         <form onSubmit={handleAddTask}>
-          <label id="name">Thêm nhiệm vụ mới</label>
-          <input type="text" name="name" id="name" />
-          <input type="text" name="id" id="id" />
-          <button type="submit">Thêm mới</button>
+          <label>Thêm nhiệm vụ mới</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Tên nhiệm vụ"
+            value={editingTodo?.name || ""}
+            onChange={(e) =>
+              setEditingTodo({ ...editingTodo, name: e.target.value })
+            }
+          />
+          <input
+            type="text"
+            name="id"
+            id="id"
+            placeholder="Tên id"
+            value={editingTodo?.id || ""}
+            onChange={(e) =>
+              setEditingTodo({ ...editingTodo, id: e.target.value })
+            }
+          />
+          <button type="submit">{textBtn}</button>
         </form>
       </main>
     </div>

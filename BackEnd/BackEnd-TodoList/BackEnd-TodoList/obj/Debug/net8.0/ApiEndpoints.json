@@ -65,18 +65,12 @@
         "IsRequired": true
       },
       {
-        "Name": "value",
-        "Type": "System.String",
+        "Name": "todoList",
+        "Type": "BackEnd_TodoList.Models.TodoList.TodoList",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "BackEnd_TodoList.Controllers.Todo_ListController",

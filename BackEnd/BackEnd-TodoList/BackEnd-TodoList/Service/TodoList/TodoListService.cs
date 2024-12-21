@@ -35,7 +35,15 @@ namespace BackEnd_TodoList.Service.TodoListService
 
         public bool UpdateTodo(TodoList todoList)
         {
-            throw new NotImplementedException();
+            var existingTodo = _todoListDBContext.TodoLists.FirstOrDefault(t => t.Id == todoList.Id);
+            if (existingTodo == null) // Nếu không tìm thấy phần tử, không cập nhật
+            {
+                return false;
+            }
+
+            existingTodo.Name = todoList.Name;
+            _todoListDBContext.SaveChanges();
+            return true;
         }
     }
 }

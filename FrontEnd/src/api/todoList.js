@@ -15,3 +15,7 @@ export const deleteDataTodoList = (id) => {
 export const addDataTodoList = (task) => {
   return axiosClient.post(`${END_POINT.TODO_LIST}`, task)
 }
+
+export const updateDataTodoList = async (id, data) => {
+  return await axiosClient.put(`${END_POINT.TODO_LIST}/${id}`, data);
+};

@@ -61,6 +61,10 @@ function App() {
     }
   };
 
+  const handleCompleTask = async (item) => {
+    await updateDataTodoList(item.id, { isCompleted: !item.isCompleted });
+  }
+
   return (
     <div className="App">
       <main id="todolist">
@@ -70,7 +74,7 @@ function App() {
         </h1>
         {todoList?.length > 0 ? (
           todoList.map((item) => (
-            <li className={item.isComplete ? "done" : ""} key={item.id}>
+            <li className={item.isCompleted ? "done" : ""} key={item.id} onDoubleClick={() => handleCompleTask(item)}>
               <span className="label">{item.name}</span>
               <div className="actions">
                 {/* Nút chỉnh sửa */}

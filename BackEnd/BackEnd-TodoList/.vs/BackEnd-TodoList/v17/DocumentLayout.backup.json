@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "D:\\Todo-App-ReactJS-.Net-Core-API\\BackEnd\\BackEnd-TodoList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E026562E-4433-47A0-97E1-2222F742DDC5}|BackEnd-TodoList\\BackEnd-TodoList.csproj|d:\\todo-app-reactjs-.net-core-api\\backend\\backend-todolist\\backend-todolist\\service\\todolist\\todolistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E026562E-4433-47A0-97E1-2222F742DDC5}|BackEnd-TodoList\\BackEnd-TodoList.csproj|solutionrelative:backend-todolist\\service\\todolist\\todolistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E026562E-4433-47A0-97E1-2222F742DDC5}|BackEnd-TodoList\\BackEnd-TodoList.csproj|d:\\todo-app-reactjs-.net-core-api\\backend\\backend-todolist\\backend-todolist\\data\\todolistdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E026562E-4433-47A0-97E1-2222F742DDC5}|BackEnd-TodoList\\BackEnd-TodoList.csproj|solutionrelative:backend-todolist\\data\\todolistdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E026562E-4433-47A0-97E1-2222F742DDC5}|BackEnd-TodoList\\BackEnd-TodoList.csproj|d:\\todo-app-reactjs-.net-core-api\\backend\\backend-todolist\\backend-todolist\\data\\todolistdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E026562E-4433-47A0-97E1-2222F742DDC5}|BackEnd-TodoList\\BackEnd-TodoList.csproj|solutionrelative:backend-todolist\\data\\todolistdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E026562E-4433-47A0-97E1-2222F742DDC5}|BackEnd-TodoList\\BackEnd-TodoList.csproj|d:\\todo-app-reactjs-.net-core-api\\backend\\backend-todolist\\backend-todolist\\models\\todolist\\todolist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E026562E-4433-47A0-97E1-2222F742DDC5}|BackEnd-TodoList\\BackEnd-TodoList.csproj|solutionrelative:backend-todolist\\models\\todolist\\todolist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E026562E-4433-47A0-97E1-2222F742DDC5}|BackEnd-TodoList\\BackEnd-TodoList.csproj|d:\\todo-app-reactjs-.net-core-api\\backend\\backend-todolist\\backend-todolist\\seeder\\databaseseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E026562E-4433-47A0-97E1-2222F742DDC5}|BackEnd-TodoList\\BackEnd-TodoList.csproj|solutionrelative:backend-todolist\\seeder\\databaseseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E026562E-4433-47A0-97E1-2222F742DDC5}|BackEnd-TodoList\\BackEnd-TodoList.csproj|d:\\todo-app-reactjs-.net-core-api\\backend\\backend-todolist\\backend-todolist\\service\\todolist\\itodolistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E026562E-4433-47A0-97E1-2222F742DDC5}|BackEnd-TodoList\\BackEnd-TodoList.csproj|solutionrelative:backend-todolist\\service\\todolist\\itodolistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E026562E-4433-47A0-97E1-2222F742DDC5}|BackEnd-TodoList\\BackEnd-TodoList.csproj|d:\\todo-app-reactjs-.net-core-api\\backend\\backend-todolist\\backend-todolist\\service\\todolist\\todolistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E026562E-4433-47A0-97E1-2222F742DDC5}|BackEnd-TodoList\\BackEnd-TodoList.csproj|solutionrelative:backend-todolist\\service\\todolist\\todolistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E026562E-4433-47A0-97E1-2222F742DDC5}|BackEnd-TodoList\\BackEnd-TodoList.csproj|d:\\todo-app-reactjs-.net-core-api\\backend\\backend-todolist\\backend-todolist\\configuration\\todoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E026562E-4433-47A0-97E1-2222F742DDC5}|BackEnd-TodoList\\BackEnd-TodoList.csproj|solutionrelative:backend-todolist\\configuration\\todoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E026562E-4433-47A0-97E1-2222F742DDC5}|BackEnd-TodoList\\BackEnd-TodoList.csproj|d:\\todo-app-reactjs-.net-core-api\\backend\\backend-todolist\\backend-todolist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E026562E-4433-47A0-97E1-2222F742DDC5}|BackEnd-TodoList\\BackEnd-TodoList.csproj|solutionrelative:backend-todolist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E026562E-4433-47A0-97E1-2222F742DDC5}|BackEnd-TodoList\\BackEnd-TodoList.csproj|d:\\todo-app-reactjs-.net-core-api\\backend\\backend-todolist\\backend-todolist\\controllers\\todo-list-controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,43 +46,121 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ITodoListService.cs",
-              "DocumentMoniker": "D:\\Todo-App-ReactJS-.Net-Core-API\\BackEnd\\BackEnd-TodoList\\BackEnd-TodoList\\Service\\TodoList\\ITodoListService.cs",
-              "RelativeDocumentMoniker": "BackEnd-TodoList\\Service\\TodoList\\ITodoListService.cs",
-              "ToolTip": "D:\\Todo-App-ReactJS-.Net-Core-API\\BackEnd\\BackEnd-TodoList\\BackEnd-TodoList\\Service\\TodoList\\ITodoListService.cs",
-              "RelativeToolTip": "BackEnd-TodoList\\Service\\TodoList\\ITodoListService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "DatabaseSeeder.cs",
+              "DocumentMoniker": "D:\\Todo-App-ReactJS-.Net-Core-API\\BackEnd\\BackEnd-TodoList\\BackEnd-TodoList\\Seeder\\DatabaseSeeder.cs",
+              "RelativeDocumentMoniker": "BackEnd-TodoList\\Seeder\\DatabaseSeeder.cs",
+              "ToolTip": "D:\\Todo-App-ReactJS-.Net-Core-API\\BackEnd\\BackEnd-TodoList\\BackEnd-TodoList\\Seeder\\DatabaseSeeder.cs",
+              "RelativeToolTip": "BackEnd-TodoList\\Seeder\\DatabaseSeeder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T12:52:43.719Z",
+              "WhenOpened": "2024-12-23T05:57:20.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TodoListDbContextFactory.cs",
+              "DocumentMoniker": "D:\\Todo-App-ReactJS-.Net-Core-API\\BackEnd\\BackEnd-TodoList\\BackEnd-TodoList\\Data\\TodoListDbContextFactory.cs",
+              "RelativeDocumentMoniker": "BackEnd-TodoList\\Data\\TodoListDbContextFactory.cs",
+              "ToolTip": "D:\\Todo-App-ReactJS-.Net-Core-API\\BackEnd\\BackEnd-TodoList\\BackEnd-TodoList\\Data\\TodoListDbContextFactory.cs",
+              "RelativeToolTip": "BackEnd-TodoList\\Data\\TodoListDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T05:52:18.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Todo-App-ReactJS-.Net-Core-API\\BackEnd\\BackEnd-TodoList\\BackEnd-TodoList\\Program.cs",
+              "RelativeDocumentMoniker": "BackEnd-TodoList\\Program.cs",
+              "ToolTip": "D:\\Todo-App-ReactJS-.Net-Core-API\\BackEnd\\BackEnd-TodoList\\BackEnd-TodoList\\Program.cs",
+              "RelativeToolTip": "BackEnd-TodoList\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T05:51:39.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TodoConfiguration.cs",
+              "DocumentMoniker": "D:\\Todo-App-ReactJS-.Net-Core-API\\BackEnd\\BackEnd-TodoList\\BackEnd-TodoList\\Configuration\\TodoConfiguration.cs",
+              "RelativeDocumentMoniker": "BackEnd-TodoList\\Configuration\\TodoConfiguration.cs",
+              "ToolTip": "D:\\Todo-App-ReactJS-.Net-Core-API\\BackEnd\\BackEnd-TodoList\\BackEnd-TodoList\\Configuration\\TodoConfiguration.cs",
+              "RelativeToolTip": "BackEnd-TodoList\\Configuration\\TodoConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T05:51:12.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TodoListDBContext.cs",
+              "DocumentMoniker": "D:\\Todo-App-ReactJS-.Net-Core-API\\BackEnd\\BackEnd-TodoList\\BackEnd-TodoList\\Data\\TodoListDBContext.cs",
+              "RelativeDocumentMoniker": "BackEnd-TodoList\\Data\\TodoListDBContext.cs",
+              "ToolTip": "D:\\Todo-App-ReactJS-.Net-Core-API\\BackEnd\\BackEnd-TodoList\\BackEnd-TodoList\\Data\\TodoListDBContext.cs",
+              "RelativeToolTip": "BackEnd-TodoList\\Data\\TodoListDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T05:51:10.408Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "TodoList.cs",
+              "DocumentMoniker": "D:\\Todo-App-ReactJS-.Net-Core-API\\BackEnd\\BackEnd-TodoList\\BackEnd-TodoList\\Models\\TodoList\\TodoList.cs",
+              "RelativeDocumentMoniker": "BackEnd-TodoList\\Models\\TodoList\\TodoList.cs",
+              "ToolTip": "D:\\Todo-App-ReactJS-.Net-Core-API\\BackEnd\\BackEnd-TodoList\\BackEnd-TodoList\\Models\\TodoList\\TodoList.cs",
+              "RelativeToolTip": "BackEnd-TodoList\\Models\\TodoList\\TodoList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T05:51:05.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ITodoListService.cs",
+              "DocumentMoniker": "D:\\Todo-App-ReactJS-.Net-Core-API\\BackEnd\\BackEnd-TodoList\\BackEnd-TodoList\\Service\\TodoList\\ITodoListService.cs",
+              "RelativeDocumentMoniker": "BackEnd-TodoList\\Service\\TodoList\\ITodoListService.cs",
+              "ToolTip": "D:\\Todo-App-ReactJS-.Net-Core-API\\BackEnd\\BackEnd-TodoList\\BackEnd-TodoList\\Service\\TodoList\\ITodoListService.cs",
+              "RelativeToolTip": "BackEnd-TodoList\\Service\\TodoList\\ITodoListService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T05:50:59.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Todo-List-Controller.cs",
               "DocumentMoniker": "D:\\Todo-App-ReactJS-.Net-Core-API\\BackEnd\\BackEnd-TodoList\\BackEnd-TodoList\\Controllers\\Todo-List-Controller.cs",
               "RelativeDocumentMoniker": "BackEnd-TodoList\\Controllers\\Todo-List-Controller.cs",
               "ToolTip": "D:\\Todo-App-ReactJS-.Net-Core-API\\BackEnd\\BackEnd-TodoList\\BackEnd-TodoList\\Controllers\\Todo-List-Controller.cs",
               "RelativeToolTip": "BackEnd-TodoList\\Controllers\\Todo-List-Controller.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwDIAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwCEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-20T12:38:15.511Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "TodoListService.cs",
               "DocumentMoniker": "D:\\Todo-App-ReactJS-.Net-Core-API\\BackEnd\\BackEnd-TodoList\\BackEnd-TodoList\\Service\\TodoList\\TodoListService.cs",
               "RelativeDocumentMoniker": "BackEnd-TodoList\\Service\\TodoList\\TodoListService.cs",
               "ToolTip": "D:\\Todo-App-ReactJS-.Net-Core-API\\BackEnd\\BackEnd-TodoList\\BackEnd-TodoList\\Service\\TodoList\\TodoListService.cs",
               "RelativeToolTip": "BackEnd-TodoList\\Service\\TodoList\\TodoListService.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAkwC8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowAgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-20T06:39:01.966Z",
               "EditorCaption": ""
